@@ -11,20 +11,16 @@
       --background-color: black;
       --main-color: #e8e8e8;
       --logo-color: #38bb8a;
-
     }
-
     * {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
     }
-
     body {
       background-color: rgb(16, 16, 16);
       scroll-behavior: 0.3s;
     }
-
     .content-container {
       margin-top: 60px;
       width: calc(100% / 1.1);
@@ -32,7 +28,6 @@
       margin-right: auto;
       padding: 40px;
     }
-
     .section-heading {
       color: black;
       text-align: center;
@@ -40,15 +35,12 @@
       margin: 5px;
       font-size: 60px;
     }
-
-
     /* Start header */
     .welcome {
       background-color: black;
       width: 100%;
       height: 70px;
     }
-
     header {
       display: flex;
       align-items: center;
@@ -63,7 +55,6 @@
       transform: translateX(50%);
       right: 50%;
     }
-
     header::before {
       content: "";
       border-bottom: 1px solid var(--main-color);
@@ -74,24 +65,19 @@
       padding: 0 calc(100% - 84.2%);
       display: flex
     }
-
     header .logo img {
       width: 60px;
       max-height: 40px;
     }
-
     header .nav-ba {
       margin-left: 27%;
     }
-
     header .nav-bar ul {
       display: flex;
     }
-
     header .nav-bar ul li {
       display: block;
     }
-
     header .nav-bar ul li a {
       text-decoration: none;
       color: var(--main-color);
@@ -99,28 +85,23 @@
       padding: 18px;
       transition: 0.3s;
     }
-
     header .nav-bar ul li a:hover,
     header .nav-bar ul li a.active {
       opacity: 0.5;
       text-decoration: underline;
     }
-
     /* End header */
     /* Start new drop */
     .new-drop {
       display: flex;
     }
-
     .new-drop .content-container {
       margin-bottom: 100px;
     }
-
     .new-drop .new-drop-image {
       display: flex;
       justify-content: center;
     }
-
     .new-drop .new-drop-image img {
       max-width: 100%;
       filter: grayscale(1) brightness(0.45);
@@ -130,33 +111,27 @@
       width: 100%;
       max-height: 800px;
     }
-
     .new-drop h2 {
       font-size: 100px;
       text-align: center;
       margin-top: 18%;
       color: var(--main-color);
     }
-
     /* End new drop */
     /* Start Vision */
-
     .vision h2 {
       font-weight: bold;
       color: var(--main-color);
     }
-
     .vision .content-container {
       padding-top: 17%;
     }
-
     .vision p {
       font-size: 27px;
       color: rgb(169 165 165);
       font-weight: bolder;
       line-height: 1.6;
     }
-
     /* End Vision */
   </style>
 </head>
