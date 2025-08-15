@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="stylesheet" href="css/master.css"> -->
+  <title>Baggy-Store</title>
+  <style>
+    :root {
+      --background-color: black;
+      --main-color: #e8e8e8;
+      --logo-color: #38bb8a;
+
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: rgb(16, 16, 16);
+      scroll-behavior: 0.3s;
+    }
+
+    .content-container {
+      margin-top: 60px;
+      width: calc(100% / 1.1);
+      margin-left: auto;
+      margin-right: auto;
+      padding: 40px;
+    }
+
+    .section-heading {
+      color: black;
+      text-align: center;
+      padding: 20px;
+      margin: 5px;
+      font-size: 60px;
+    }
+
+
+    /* Start header */
+    .welcome {
+      background-color: black;
+      width: 100%;
+      height: 70px;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      position: fixed;
+      width: 100%;
+      top: -2px;
+      padding: 15px 0;
+      margin: 0 auto;
+      backdrop-filter: blur(10px);
+      z-index: 1;
+      transform: translateX(50%);
+      right: 50%;
+    }
+
+    header::before {
+      content: "";
+      border-bottom: 1px solid var(--main-color);
+      height: 1px;
+      position: absolute;
+      width: calc(50% + 125px);
+      top: 97%;
+      padding: 0 calc(100% - 84.2%);
+      display: flex
+    }
+
+    header .logo img {
+      width: 60px;
+      max-height: 40px;
+    }
+
+    header .nav-ba {
+      margin-left: 27%;
+    }
+
+    header .nav-bar ul {
+      display: flex;
+    }
+
+    header .nav-bar ul li {
+      display: block;
+    }
+
+    header .nav-bar ul li a {
+      text-decoration: none;
+      color: var(--main-color);
+      font-size: 20px;
+      padding: 18px;
+      transition: 0.3s;
+    }
+
+    header .nav-bar ul li a:hover,
+    header .nav-bar ul li a.active {
+      opacity: 0.5;
+      text-decoration: underline;
+    }
+
+    /* End header */
+    /* Start new drop */
+    .new-drop {
+      display: flex;
+    }
+
+    .new-drop .content-container {
+      margin-bottom: 100px;
+    }
+
+    .new-drop .new-drop-image {
+      display: flex;
+      justify-content: center;
+    }
+
+    .new-drop .new-drop-image img {
+      max-width: 100%;
+      filter: grayscale(1) brightness(0.45);
+      top: 65px;
+      position: absolute;
+      z-index: -1;
+      width: 100%;
+      max-height: 800px;
+    }
+
+    .new-drop h2 {
+      font-size: 100px;
+      text-align: center;
+      margin-top: 18%;
+      color: var(--main-color);
+    }
+
+    /* End new drop */
+    /* Start Vision */
+
+    .vision h2 {
+      font-weight: bold;
+      color: var(--main-color);
+    }
+
+    .vision .content-container {
+      padding-top: 17%;
+    }
+
+    .vision p {
+      font-size: 27px;
+      color: rgb(169 165 165);
+      font-weight: bolder;
+      line-height: 1.6;
+    }
+
+    /* End Vision */
+  </style>
+</head>
+
+<body>
+  <div class="welcome" id="home"></div>
+  <header id="Home">
+    <div class="logo"><img src="/imgs/logo.png" alt="Baggy"></div>
+    <div class="nav-bar">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#new">New</a></li>
+        <li><a href="#vision">Vision</a></li>
+        <li><a href="#social">Social</a></li>
+      </ul>
+    </div>
+  </header>
+  <div class="new-drop" id="new">
+    <div class="content-container">
+      <h2>New Drop</h2>
+      <div class="new-drop-image">
+        <img src="imgs/newdrop.jpg">
+      </div>
+    </div>
+  </div>
+  <div class="vision" id="vision">
+    <div class="content-container">
+      <h2 class="section-heading">Vision</h2>
+      <p>
+        Baggy isn’t just a clothing brand — it’s a new way to live fashion. We’re rewriting the rules of streetwear,
+        blending oversized comfort with a modern, high-end edge to create a style that’s never been seen before. Our
+        pieces are bold yet refined, minimal yet powerful, designed for those who know they’re different and aren’t
+        afraid to show it. Every item is crafted for exceptional individuals — artists, creators, innovators, and stars
+        — who move through the world with confidence. We draw inspiration from the raw energy of the streets, elevate it
+        with superb design, and wrap it in deep, dark tones that speak of mystery, power, and class. Baggy is for those
+        who live outside the ordinary, who set trends rather than follow them, and who see clothing as an extension of
+        their personality. This is not just fashion — it’s a statement, a movement, and a symbol of the future of style.
+      </p>
+    </div>
+  </div>
+  <script src="/main.js"></script>
+</body>
+
+</html>
